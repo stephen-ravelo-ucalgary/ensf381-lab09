@@ -15,7 +15,8 @@ users = {"alice": "password123",
          "grace": "trustno1",
          "heidi": "admin123",
          "ivan": "welcome1",
-         "judy": "password1"}
+         "judy": "password1",
+         "balls": "123"}
 
 @app.route('/validate_login', methods=['POST'])
 def validate_login():
@@ -24,7 +25,7 @@ def validate_login():
         if (username == data['username'] and password == data['password']):
             msg = f'Welcome {data['username']} to the home page!'
             return {'success': True, 'msg' : msg}
-    msg = f'Invalid username and/or password.'
+    msg = f'Invalid username or password.'
     return {'success': False, 'msg': msg}
     
 @app.route('/predict_house_price', methods=['POST'])

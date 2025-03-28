@@ -1,0 +1,53 @@
+div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 1rem;
+}
+
+.HousePricePredictor-form {
+    display: flex;   
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding: 24px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgb(100,100,100);
+    margin: auto;
+}
+
+label {
+    width: 100%;
+}
+
+.HousePricePredictor-form input,  .HousePricePredictor-form select {
+    padding: 0;
+    margin-bottom: 1rem;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+button:hover {
+    background-color: rgba(0, 52, 136, 0.842);
+}
+
+.price {
+    background-color: #dff0d8;
+    border-style: solid;
+    border-color: #3c763d;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 12px;
+}
